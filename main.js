@@ -11,10 +11,10 @@ let resultMovie = [];
 let resultSeries = [];
 let random = Math.floor((Math.random() * 4 ) + 1);
 
-const urlMovie = "https://api.themoviedb.org/3/discover/movie?api_key=9c3d2974beffc3faec62e82396e77714&language=en-US&sort_by=popularity.desc";
-const urlSeries = "https://api.themoviedb.org/3/discover/tv?api_key=9c3d2974beffc3faec62e82396e77714&language=en-US&sort_by=popularity.desc&page=1&vote_average.gte=5";
+const urlMovie = "https://api.themoviedb.org/3/discover/movie?api_key=YOUR_API_KEY&language=en-US&sort_by=popularity.desc";
+const urlSeries = "https://api.themoviedb.org/3/discover/tv?api_key=YOUR_API_KEY&language=en-US&sort_by=popularity.desc&page=1&vote_average.gte=5";
 
-const token = "NzI3NzkyMzgxMjkzODg3NTg4.XvztuA.IZY1Co8v2feyvmvebh4KTaj_Omk";
+const token = "YOUR_TOKEN";
 client.on('ready', ()=>{
   console.log("IMDb_Bot is running...");
   var testMovie = fetch(urlMovie).then(function (res) {
